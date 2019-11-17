@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>Codejam Palette</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <p><a href="#" id="menu">&#9776</a>CodeJam - Palette</p>
+        </header>
+        <main>
+            <div class="style">
+                <div class="action">
+                    <input id="bucket" type="color" value="#ffffff" hidden><label class="label b" for="bucket"><img src="./image/bucket.svg" alt="bucket">Paint bucket</label>
+                    <input id="choose-color" type="color" value="#00ff00" hidden><label class="label c" for="choose-color"><img src="./image/pipette.svg" alt="pipette">Choose color</label>
+                    <button id="pencil" class="small-button"><img src="./image/pencil.svg" alt="pencil">Pencil</button>
+                    <button id="transform" class="large-button"><img src="./image/transform.svg" alt="transform">Transform</button>
+                </div>
+                <div class="color">
+                    <input id="current" type="color" value="#00ff00" hidden><label class="label" for="current"> <span></span>Current color</label>
+                    <button id="previous" class="small-button">
+                        <span></span>Prev color
+                    </button>
+                    <button id="red" class="small-button">
+                        <span></span>red
+                    </button>
+                    <button id="blue" class="large-button">
+                        <span></span>blue
+                    </button>
+                </div>
+            </div>
+            <div>
+                <div class="load-panel">
+                    <button id="loader">Load</button>
+                    <input id="city" type="text">
+                    <button id="white-blake">W&B</button>
+                </div>
+                <div class="canvas">
+                    <canvas width="512" height="512" id="pixel"></canvas>
+                </div>
+                <div class="canvas-size">
+                    <button id="small-size">128x128</button>
+                    <button id="medium-size">256x256</button>
+                    <button id="large-size">512x512</button>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
