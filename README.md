@@ -1,1 +1,1 @@
-https://vir45.github.io/codejam_image_gh-cv/cv
+https://vir45.github.io/codejamimage-cv/cv
